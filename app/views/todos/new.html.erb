@@ -1,0 +1,9 @@
+<%= form_for @todo do |t| %>
+  <%= t.label :tasks %>:
+  <%= t.text_field :tasks %><br />
+
+  <%= t.label :finished %>:
+  <%= t.text_field :finished %><br />
+
+  <%= t.submit %>
+<% end %>

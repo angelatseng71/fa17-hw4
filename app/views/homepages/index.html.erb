@@ -1,0 +1,45 @@
+<h1>List of All Cats, Users, and Todos</h1>
+<table>
+ <thead>
+   <th>Cats</th>
+ </thead>
+ <tbody>
+   <% @cats.each do |c| %>
+   <tr>
+    <td>
+      <%= c.name %>
+      </td>
+   </tr>
+   <% end %>
+ </tbody>
+</table>
+
+<table>
+ <thead>
+   <th>Users</th>
+ </thead>
+ <tbody>
+   <% @users.each do |u| %>
+   <tr>
+    <td>
+      <%= u.username %>
+      </td>
+   </tr>
+   <% end %>
+ </tbody>
+</table>
+
+<table>
+ <thead>
+   <th>Todos</th>
+ </thead>
+ <tbody>
+   <% @todos.each do |t| %>
+   <tr>
+    <td>
+      <%= t.tasks %> 
+    </td>
+   </tr>
+   <% end %>
+ </tbody>
+</table>
